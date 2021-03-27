@@ -81,4 +81,3 @@ You can also set the `<seed_id>` by updating the `seeds` key in your `./config/c
 ## Problems, questions ?
 
 Feel free to [open an issue](https://github.com/fetchai/genesis-prelaunch/issues) if you encounter any problems or have a question, we'll do our best to help you!
->>>>>>> initial commit
