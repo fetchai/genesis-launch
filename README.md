@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# genesis-launch
-Repo for launch of Fetch.ai main-net
-=======
 # Fetch.ai Mainnet
 
 In launching the Fetch.ai, there will be full token interoperability with the FET ERC-20 token. Initially, transfers between the two networks will be mediated by a custodial bridge, and the supply of FET tokens that can be transferred to the mainnet will be limited to 60 million FET. This will be increased progressively over the first six months of the network's operation until there is free movement of FET between the native chain. This will coincide with deployment of a non-custodial relayer based on the [Gravity](https://github.com/cosmos/gravity-bridge) bridge. 
