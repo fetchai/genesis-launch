@@ -1,8 +1,10 @@
 ## Genesis Parameters
 
-Many genesis fields are self-evident, null, or uncontroversial (e.g. gas prices, which are chosen for spam prevention).
+This document is derived from the quantities first described in the release of the [Cosmos-Hub](https://github.com/cosmos/mainnet/blob/master/params/README.md). 
 
-Here the more subjective parameter choices are documented with the reasons behind their recommendation.
+Here the more subjective parameter choices are documented with the reasons behind their recommendation. Text in *italics*,
+in the document below, represents justifications from [Fetch.ai](https://fetch.ai) for either persisting with the default Cosmos parameters 
+or for modifications. 
 
 Note that all durations are specified in nanoseconds.
 
@@ -10,32 +12,45 @@ Note that all durations are specified in nanoseconds.
 
 - `"unbonding_time": "1814400000000000"`. The unbonding time determines the duration for which bonded stake is
   held accountable for any discovered equivocations, specified in nanoseconds. 3 weeks was chosen to balance
-  the concerns of a sufficient unbonding period for lite client safety and a modicum of staking token liquidity.
-- `"max_validators": "100"`. The maximum validator count is the total number of validators which can be bonded
+  the concerns of a sufficient unbonding period for light-client safety and a modicum of staking token liquidity.
+  *This bonding period has proven successful for the Cosmos-hub and many other projects. The Fetch.ai staking
+    program has an identical bonding period and has achieved a quantity of tokens staked that 
+    indicates that the incentives on offer will provide the network with sufficent crypto-economic security.*
+
+- `"max_validators": "50"`. The maximum validator count is the total number of validators which can be bonded
   and voting in consensus for any given block - which validators are in this set is dynamically determined
-  to be the top hundred validator candidates sorted by delegated stake. The value of `100` was specified in the Cosmos whitepaper.
-  It is expected to grow over time, but automatic increases aren't yet
-  implemented.
+  to be the top hundred validator candidates sorted by delegated stake.
+  *The Fetch.ai validator set has been deliberately restricted compared with Cosmos (which has 100)  to ensure
+    that validator nodes are not operated at a loss by the community. The Fetch.ai random beacon provides greater 
+    security but potentially at greater communication cost. This will be mitigated in the future by using a 
+    a light-node, full-node consensus as specified in the minimal agency consensus whitepaper to increase the 
+    decentralization of the network without compromising throughput.* 
 
 ### Minting Module
 
-- `"inflation": "0.07"`. The initial annual inflation rate will be 7%, as specified in the Cosmos whitepaper.
-- `"inflation_max": "0.2"`. The maximum annual inflation rate will be 20%, as specified in the Cosmos whitepaper.
-- `"inflation_min": "0.07"`. The minimum annual inflation rate will be 7%, as specified in the Cosmos whitepaper.
-- `"inflation_rate_change": "0.13"`. The rate at which the inflation rate changes (second derivative of inflation),
-  per year squared, will be 13%, as specified in the Cosmos whitepaper.
+- `"inflation": "0.03"`. *The Fetch.ai network has a per annum issuance rate of 3%. The Fetch.ai staking program 
+  has shown that block rewards at this level are sufficient to incentivise the operation of a secure network. This  
+  issuance rate is also capable of offsetting the reduction in the true token supply caused by lost keys and 
+  transaction "dust" (i.e. small residual token amounts that are uneconomic to transfer).*
+
+- *The Fetch.ai network has a fixed issuance rate as previous experience has shown that network security
+  can be achieved with a similar reward profile. A potential problem with variable rewards is that a loss of confidence
+  in the project could leads to a reduction in the quantity of staked tokens which then triggers higher issuance. 
+  This could lead to a positive feed-back loop that accelerates further loss of confidence.*
 
 ### Distribution Module
 
-- `"community_tax": "0.02"`. The tax on inflation and fees levied to fund the public goods pool will be 2%,
-  as specified in the Cosmos whitepaper.
-- `"base_proposer_reward": "0.01"`. 1% of inflation and fees (flat) will be allocated to the block proposer. This provides an incentive for 
-    validators to be good proposers by being available when it's their turn to propose, including lots of transactions in their proposed block, and
-    gossiping the proposed block quickly.
+- `"community_tax": "0.02"`. The tax on inflation and fees levied to fund the public goods pool will be 2%. *These
+   funds will be used for the operation of the Fetch.ai foundation and the funding of projects to further develop the
+   ecosystem.*
+   
+- `"base_proposer_reward": "0.01"`. 1% of inflation and fees (flat) will be allocated to the block proposer. This provides 
+    an incentive for validators to be good proposers by being available when it's their turn to propose, including lots of
+    transactions in their proposed block, and gossiping the proposed block quickly.
 - `"bonus_proposer_reward": "0.04"`. 4% of inflation and fees (varying according to the fraction of precommits included)
-  will be allocated to the block proposer to incentivize them to include as many
-  precommits from other validators as possible.
-- `"withdraw_addr_enabled": false`. Changing reward withdrawal addresses will be initially disabled. It may later be enabled via a hard fork.
+  will be allocated to the block proposer to incentivize them to include as many precommits from other validators as possible.
+- `"withdraw_addr_enabled": false`. Changing reward withdrawal addresses will be initially disabled. *We see no reason to enable
+    this capability.* 
 
 ### Governance Module
 
