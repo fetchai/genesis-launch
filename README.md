@@ -4,7 +4,7 @@ In launching the Fetch.ai, there will be full token interoperability with the FE
 
 ## Timeline
 
-- **9:00 UTC on Monday the 29th of March, 2021**. The Ethereum bridge [contract](needs-link) will be opened and will collect FET ERC20-token transfers to the mainnet. The contract UI [here](needs-link) will enable you to specify a destination address on the mainnet.
+- **9:00 UTC on Monday the 29th of March, 2021**. The Ethereum bridge [contract](https://etherscan.io/address/0x947872ad4d95e89e513d7202550a810ac1b626cc) will be opened and will collect FET ERC20-token transfers to the mainnet. The contract UI [here](https://token-bridge.fetch.ai/) will enable you to specify a destination address on the mainnet.
 - **12:00 UTC on Monday the 29th**, public release of genesis repo. At this point, we will start collecting genesis signatures for the initial validator set for the network launch.
 - **12:00 UTC on Wednesday the 31st**, we will close the collection of genesis transactions and create the final merge.
 - **14:00 UTC on Wednesday the 31st**. Mainnet launch. 
