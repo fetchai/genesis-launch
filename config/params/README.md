@@ -75,7 +75,7 @@ Note that all durations are specified in nanoseconds.
   (it must be the same as the unbonding period).
 - `"signed_blocks_window": "10000"`. The rolling window for uptime measurement is 10,000 blocks. *For a block time of 6 
   seconds this amounts to around 16 hours. A validator can be unavailable for 4 hours and easily reach the threshold of 
-  50% of blocks signed.*
+  5% of blocks signed.*
 - `"min_signed_per_window": "0.05"`. A minimum of 5% of the blocks in the last window must have been signed or
   else a validator will be slashed for downtime. To nurture network launch, a lenient uptime requirement is recommended 
   that can later be increased by governance.
