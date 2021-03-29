@@ -16,7 +16,7 @@ Add details here.
 ## Install fetchd and fetchcli
 
 Clone and install fetchd and fetchcli from https://github.com/fetchai/fetchd.
-Make sure to checkout the `v0.6.3` release before installing
+Make sure to checkout the `v0.7.0` release before installing
 
 Once installed, verify you have the correct version with:
 
@@ -24,7 +24,7 @@ Once installed, verify you have the correct version with:
 fetchcli version
 ```
 
-This should output `0.6.3`.
+This should output `0.7.0`.
 
 ## Create key pair
 
