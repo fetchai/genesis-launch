@@ -12,7 +12,7 @@ The token rewards for the first two months of the network's operation will be mo
 
 ## Token Bridge
 
-The UI for the token bridge can be found [here](https://token-bridge.fetch.ai/). The UI will check that the destination address has the correct format, which follows the bech32 standard with a prefix of "fetch". ERC-20 tokens will be held in the bridge [contract](https://etherscan.io/address/0x947872ad4d95e89e513d7202550a810ac1b626cc), which will serve as a hot wallet for transferring funds from the mainnet to Ethereum. A [cold wallet](https://etherscan.io/address/0x5a8de252ea228deCe61638C336fE43ac8166166a) will also be used to secure the ERC-20 token funds with a symmetric hot-cold wallet deployed on the mainnet to manage and secure transfers.  
+The UI will check that the destination address has the correct format, which follows the bech32 standard with a prefix of "fetch". ERC-20 tokens will be held in the bridge [contract](https://etherscan.io/address/0x947872ad4d95e89e513d7202550a810ac1b626cc), which will serve as a hot wallet for transferring funds from the mainnet to Ethereum. A [cold wallet](https://etherscan.io/address/0x5a8de252ea228deCe61638C336fE43ac8166166a) will also be used to secure the ERC-20 token funds with a symmetric hot-cold wallet deployed on the mainnet to manage and secure transfers.  
 
 ## Install fetchd and fetchcli
 
