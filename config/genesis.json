@@ -128,7 +128,7 @@
       "time_iota_ms": "1000"
     },
     "evidence": {
-      "max_age_duration": "172800000000000",
+      "max_age_duration": "1814400000000000",
       "max_age_num_blocks": "100000"
     },
     "validator": {
