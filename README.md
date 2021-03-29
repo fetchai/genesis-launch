@@ -7,7 +7,7 @@ The token rewards for the first two months of the network's operation will be mo
 ## Timeline
 - **18:00 UTC on Monday the 29th of March, 2021**. 
    - The Ethereum bridge [contract](https://etherscan.io/address/0x947872ad4d95e89e513d7202550a810ac1b626cc) will be opened and will collect FET ERC20-token transfers to the mainnet. The contract UI [here](https://token-bridge.fetch.ai/) will be opened to allow FET token holders specify a destination address on the mainnet.
-   - The genesis repo will be released publicly. At this point, we will start collecting genesis signatures for the initial validator set for the network launch.
+   - This genesis launch repo will be released publicly. At this point, we will start collecting genesis signatures for the initial validator set for the network launch.
 - **12:00 UTC on Wednesday the 31st.** The collection of genesis transactions will be closed and merged to create the genesis block.
 - **14:00 UTC on Wednesday the 31st.** Mainnet launch. 
 
