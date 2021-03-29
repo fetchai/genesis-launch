@@ -1,9 +1,10 @@
 # Fetch.ai Mainnet
 
-In launching the Fetch.ai, there will be full token interoperability with the FET ERC-20 token. Initially, transfers between the two networks will be mediated by a custodial bridge, and the supply of FET tokens that can be transferred to the mainnet will be limited to 60 million FET. This will be increased progressively over the first six months of the network's operation until there is free movement of FET between the native chain. This will coincide with the deployment of a non-custodial relayer based on the [Gravity](https://github.com/cosmos/gravity-bridge) bridge. 
+In launching the Fetch.ai, there will be full token interoperability with the FET ERC-20 token. Initially, transfers between the two networks will be mediated by a custodial bridge, and the supply of FET tokens that can be transferred to the mainnet will be restricted to 60 million FET. This will be increased progressively over the first six months of the network's operation until there is free movement of FET between Ethereum and the native chain. This will coincide with the deployment of a non-custodial relayer based on the [Gravity](https://github.com/cosmos/gravity-bridge) bridge. 
+
+The token rewards for the first two months of the network's operation will be more than 4% per month corresponding to an annual rate of around 63%. It is expected that all tokens that are moved to the main-net will be staked, so the reverse token swaps to Ethereum will not be enabled until Wednesday the 21st of April when the first unbonding period will have been completed. 
 
 ## Timeline
-
 - **9:00 UTC on Monday the 29th of March, 2021**. The Ethereum bridge [contract](https://etherscan.io/address/0x947872ad4d95e89e513d7202550a810ac1b626cc) will be opened and will collect FET ERC20-token transfers to the mainnet. The contract UI [here](https://token-bridge.fetch.ai/) will enable you to specify a destination address on the mainnet.
 - **12:00 UTC on Monday the 29th**, public release of genesis repo. At this point, we will start collecting genesis signatures for the initial validator set for the network launch.
 - **12:00 UTC on Wednesday the 31st**, we will close the collection of genesis transactions and create the final merge.
@@ -11,7 +12,7 @@ In launching the Fetch.ai, there will be full token interoperability with the FE
 
 ## Token Bridge
 
-Add details here. 
+The UI for the token bridge can be found [here](https://token-bridge.fetch.ai/). The UI will check that the destination address has the correct format, which follows the bech32 standard with a prefix of "fetch". ERC-20 tokens will be held in the bridge [contract](https://etherscan.io/address/0x947872ad4d95e89e513d7202550a810ac1b626cc), which will serve as a hot wallet for transferring funds from the mainnet to Ethereum. A [cold wallet](https://etherscan.io/address/0x5a8de252ea228deCe61638C336fE43ac8166166a) will also be used to secure the ERC-20 token funds with a symmetric hot-cold wallet deployed on the mainnet to manage and secure transfers.  
 
 ## Install fetchd and fetchcli
 
