@@ -119,7 +119,7 @@ Once you're happy with your gentx and genesis account settings, you can commit a
 ```
 git add .
 git commit -m "<account_name> gentx"
-git push origin master
+git push origin main
 ```
 
 Once pushed, you're ready to create your pull request. If needed, here's the [Github documentation - creating a pull request from a fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
@@ -131,7 +131,7 @@ We'll soon review and merge your pull request. Once we'll have collected all ini
 ```bash
 git remote add upstream https://github.com/fetchai/genesis-prelaunch.git
 git fetch upstream
-git reset --hard upstream/master
+git reset --hard upstream/main
 fetchd --home $(pwd) start --p2p.seeds "<seed_id>"
 ```
 
