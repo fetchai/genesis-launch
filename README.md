@@ -5,10 +5,11 @@ In launching the Fetch.ai, there will be full token interoperability with the FE
 The token rewards for the first two months of the network's operation will be more than 4% per month corresponding to an annual rate of around 63%. It is expected that all tokens that are moved to the main-net will be staked, so the reverse token swaps to Ethereum will not be enabled until Wednesday the 21st of April when the first unbonding period will have been completed. 
 
 ## Timeline
-- **9:00 UTC on Monday the 29th of March, 2021**. The Ethereum bridge [contract](https://etherscan.io/address/0x947872ad4d95e89e513d7202550a810ac1b626cc) will be opened and will collect FET ERC20-token transfers to the mainnet. The contract UI [here](https://token-bridge.fetch.ai/) will enable you to specify a destination address on the mainnet.
-- **12:00 UTC on Monday the 29th**, public release of genesis repo. At this point, we will start collecting genesis signatures for the initial validator set for the network launch.
-- **12:00 UTC on Wednesday the 31st**, we will close the collection of genesis transactions and create the final merge.
-- **14:00 UTC on Wednesday the 31st**. Mainnet launch. 
+- **18:00 UTC on Monday the 29th of March, 2021**. 
+   - The Ethereum bridge [contract](https://etherscan.io/address/0x947872ad4d95e89e513d7202550a810ac1b626cc) will be opened and will collect FET ERC20-token transfers to the mainnet. The contract UI [here](https://token-bridge.fetch.ai/) will be opened to allow FET token holders specify a destination address on the mainnet.
+   - The genesis repo will be released publicly. At this point, we will start collecting genesis signatures for the initial validator set for the network launch.
+- **12:00 UTC on Wednesday the 31st.** The collection of genesis transactions will be closed and merged to create the genesis block.
+- **14:00 UTC on Wednesday the 31st.** Mainnet launch. 
 
 ## Token Bridge
 
