@@ -57,12 +57,7 @@ cd genesis-launch/
 fetchd --home $(pwd) add-genesis-account <account_name> 1000000000000000000afet
 ```
 
-The `1000000000000000000afet` amount above defines your initial account balance. It must be at least equal to the `min_self_delegation` defined in the genesis file. Any extra tokens will remain on the account and will be available for other transactions.
-
-You can retrieve the `min_self_delegation` setting value with:
-```bash 
-cat ./config/genesis.json | jq -r '.app_state.staking.params.min_self_delegation + "afet"' 
-```
+The `1000000000000000000afet` amount above defines your initial account balance. It must match the amount of token you have transfered across the bridge.
 
 Running the above command also have several side effects:
 
@@ -104,10 +99,10 @@ Make sure your address and amount are correct, then continue to the next step.
 ### Create validator
 
 ```
-fetchd --home $(pwd) gentx  --amount 1000000000000000000afet --name <account_name> 
+fetchd --home $(pwd) gentx  --amount 1000000000000000000afet --name <account_name>
 ```
 
-This command will create a validator and delegate `1000000000000000000afet` tokens from `<account_name>`. Again, this amount depends on the `min_self_delegation` parameter, and must at least equal it.
+This command will create a validator and delegate `1000000000000000000afet` tokens from `<account_name>`. This amount is limited by the amount provisioned on the account in the previous step.
 
 Several other parameters can be adjusted here to configure your validator, such as `--commission-max-change-rate`, `--commission-max-rate`, `--commission-rate`, `--ip`... Use `fetchd gentx -h` for the full list of options.
 
