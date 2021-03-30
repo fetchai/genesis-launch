@@ -2,7 +2,23 @@
   "app_hash": "",
   "app_state": {
     "auth": {
-      "accounts": [],
+      "accounts": [
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch1d2hcrwreh2kpym2f7newl5azu2v4nzrq2u4tx0",
+            "coins": [
+              {
+                "amount": "1000000000000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
+        }
+      ],
       "params": {
         "max_memo_characters": "256",
         "sig_verify_cost_ed25519": "590",
