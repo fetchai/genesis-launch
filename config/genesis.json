@@ -1,52 +1,34 @@
 {
+  "genesis_time": "2021-03-31T14:00:00Z",
+  "chain_id": "fetchhub-1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "150000",
+      "max_gas": "1500000",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
   "app_hash": "",
   "app_state": {
-    "auth": {
-      "accounts": [],
-      "params": {
-        "max_memo_characters": "256",
-        "sig_verify_cost_ed25519": "590",
-        "sig_verify_cost_secp256k1": "1000",
-        "tx_sig_limit": "7",
-        "tx_size_cost_per_byte": "10"
-      }
-    },
+    "upgrade": {},
+    "params": null,
     "bank": {
       "send_enabled": true
-    },
-    "crisis": {
-      "constant_fee": {
-        "amount": "1000",
-        "denom": "afet"
-      }
-    },
-    "distribution": {
-      "delegator_starting_infos": [],
-      "delegator_withdraw_infos": [],
-      "fee_pool": {
-        "community_pool": []
-      },
-      "outstanding_rewards": [],
-      "params": {
-        "base_proposer_reward": "0.010000000000000000",
-        "bonus_proposer_reward": "0.040000000000000000",
-        "community_tax": "0.020000000000000000",
-        "withdraw_addr_enabled": false
-      },
-      "previous_proposer": "",
-      "validator_accumulated_commissions": [],
-      "validator_current_rewards": [],
-      "validator_historical_rewards": [],
-      "validator_slash_events": []
     },
     "evidence": {
       "evidence": [],
       "params": {
         "max_evidence_age": "1814400000000000"
       }
-    },
-    "genutil": {
-      "gentxs": []
     },
     "gov": {
       "deposit_params": {
@@ -82,18 +64,6 @@
         "mint_denom": "afet"
       }
     },
-    "params": null,
-    "slashing": {
-      "missed_blocks": {},
-      "params": {
-        "downtime_jail_duration": "600000000000",
-        "min_signed_per_window": "0.050000000000000000",
-        "signed_blocks_window": "10000",
-        "slash_fraction_double_sign": "0.005000000000000000",
-        "slash_fraction_downtime": "0.000100000000000000"
-      },
-      "signing_infos": {}
-    },
     "staking": {
       "delegations": null,
       "exported": false,
@@ -113,29 +83,75 @@
     "supply": {
       "supply": []
     },
-    "upgrade": {},
+    "crisis": {
+      "constant_fee": {
+        "amount": "1000",
+        "denom": "afet"
+      }
+    },
     "wasm": {
       "codes": null,
       "contracts": null,
       "sequences": null
-    }
-  },
-  "chain_id": "fetchhub-1",
-  "consensus_params": {
-    "block": {
-      "max_bytes": "150000",
-      "max_gas": "1500000",
-      "time_iota_ms": "1000"
     },
-    "evidence": {
-      "max_age_duration": "172800000000000",
-      "max_age_num_blocks": "100000"
+    "genutil": {
+      "gentxs": []
     },
-    "validator": {
-      "pub_key_types": [
-        "ed25519"
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "fetch13m8d0fnkhy35jaer3n9p0ygt9t7heyl80y0xxc",
+            "coins": [
+              {
+                "denom": "afet",
+                "amount": "1000000000000000000000"
+              }
+            ],
+            "public_key": "",
+            "account_number": 0,
+            "sequence": 0
+          }
+        }
       ]
+    },
+    "distribution": {
+      "delegator_starting_infos": [],
+      "delegator_withdraw_infos": [],
+      "fee_pool": {
+        "community_pool": []
+      },
+      "outstanding_rewards": [],
+      "params": {
+        "base_proposer_reward": "0.010000000000000000",
+        "bonus_proposer_reward": "0.040000000000000000",
+        "community_tax": "0.020000000000000000",
+        "withdraw_addr_enabled": false
+      },
+      "previous_proposer": "",
+      "validator_accumulated_commissions": [],
+      "validator_current_rewards": [],
+      "validator_historical_rewards": [],
+      "validator_slash_events": []
+    },
+    "slashing": {
+      "missed_blocks": {},
+      "params": {
+        "downtime_jail_duration": "600000000000",
+        "min_signed_per_window": "0.050000000000000000",
+        "signed_blocks_window": "10000",
+        "slash_fraction_double_sign": "0.005000000000000000",
+        "slash_fraction_downtime": "0.000100000000000000"
+      },
+      "signing_infos": {}
     }
-  },
-  "genesis_time": "2021-03-31T14:00:00Z"
+  }
 }
