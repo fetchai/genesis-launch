@@ -1,4 +1,6 @@
-config/
-data/
-wasm/
-
+*
+!*/
+!.gitignore
+!config/genesis.json
+!config/gentx/*.json
+!README.md
