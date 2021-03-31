@@ -1,3 +1,11 @@
+
+# We have launched!
+
+- ChainID: `fetchhub-1`
+- Seed: `9f9774d88bb6ff9f43b395baf0e7a4baba27dec6@http://connect-fetchhub.m-v2-london-c.fetch-ai.com:36856`
+- Block explorer: `https://explore-fetchhub.fetch.ai`
+- RPC: `https://rpc-fetchhub.fetch-ai.com`
+
 # Fetch.ai Mainnet
 
 In launching the Fetch.ai, there will be full token interoperability with the FET ERC-20 token. Initially, transfers between the two networks will be mediated by a custodial bridge, and the supply of FET tokens that can be transferred to the mainnet will be restricted to 60 million FET. This will be increased progressively over the first six months of the network's operation until there is free movement of FET between Ethereum and the native chain. This will coincide with the deployment of a non-custodial relayer based on the [Gravity](https://github.com/cosmos/gravity-bridge) bridge. 
@@ -132,7 +140,7 @@ We'll soon review and merge your pull request. Once we'll have collected all ini
 git remote add upstream https://github.com/fetchai/genesis-launch.git
 git fetch upstream
 git reset --hard upstream/main
-fetchd --home $(pwd) start --p2p.seeds "<seed_id>"
+fetchd --home $(pwd) start --p2p.seeds "9f9774d88bb6ff9f43b395baf0e7a4baba27dec6@connect-fetchhub.m-v2-london-c.fetch-ai.com:36856"
 ```
 
 You can also set the `<seed_id>` by updating the `seeds` key in your `./config/config.toml` to persist this change.
