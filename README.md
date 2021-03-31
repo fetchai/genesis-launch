@@ -26,7 +26,7 @@ The UI will check that the destination address has the correct format, which fol
 ## Install fetchd and fetchcli
 
 Clone and install fetchd and fetchcli from https://github.com/fetchai/fetchd.
-Make sure to checkout the `v0.7.0` release before installing
+Make sure to checkout the `v0.7.2` release before installing
 
 Once installed, verify you have the correct version with:
 
@@ -34,7 +34,7 @@ Once installed, verify you have the correct version with:
 fetchcli version
 ```
 
-This should output `0.7.0`.
+This should output `0.7.2`.
 
 ## Create key pair
 
