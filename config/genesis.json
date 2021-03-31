@@ -197,6 +197,126 @@
             "public_key": "",
             "sequence": 0
           }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch1m3evl6dqkhmwtp597wq8hhr9vtdasaktaq6wlj",
+            "coins": [
+              {
+                "amount": "1055086690437100000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch12q5gw9l9d0yyq2th77x6pjsesczpsly8h5089x",
+            "coins": [
+              {
+                "amount": "1000000000000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch1rdaxdj8e8qrm9hel97dz69zhg706shv0u09tgk",
+            "coins": [
+              {
+                "amount": "3914392000000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch1vg6424yw5uttl9j3vs9nve9lzzyk904qayv92s",
+            "coins": [
+              {
+                "amount": "1000000000000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch1umyy0tk0hz2wywggykrhc0e23qy8kmf446f7d6",
+            "coins": [
+              {
+                "amount": "52818500000000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch1pw6zcudmsckd2665zt6vpjplkgw9f2amhejktf",
+            "coins": [
+              {
+                "amount": "100000000000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch10kstwej49vk5z7alxj86ul4rllfstxfajlc9cu",
+            "coins": [
+              {
+                "amount": "4288670900000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch1xargafmw88kfrm9h7yj5hwkk3usamcwelv02rc",
+            "coins": [
+              {
+                "amount": "100000000000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
         }
       ],
       "params": {
