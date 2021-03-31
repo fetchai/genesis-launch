@@ -7,6 +7,51 @@
           "type": "cosmos-sdk/Account",
           "value": {
             "account_number": 0,
+            "address": "fetch10ua938xs4raxxckagk57kj9ntk8p0drseddxnc",
+            "coins": [
+              {
+                "amount": "1000000000000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch1qpm07wf0y9ksd023k7lnfwzda7evcqpf4q37ue",
+            "coins": [
+              {
+                "amount": "100000000000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch16254fzc4yzuassvg08fffw8u6dxvf28fv9dnnx",
+            "coins": [
+              {
+                "amount": "1000000000000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
             "address": "fetch1d2hcrwreh2kpym2f7newl5azu2v4nzrq2u4tx0",
             "coins": [
               {
