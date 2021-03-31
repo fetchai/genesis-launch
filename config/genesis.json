@@ -10,7 +10,7 @@
             "address": "fetch1kjs6vk9jm5a0lmdgkvndggz4hpuz8f24sudvrk",
             "coins": [
               {
-                "amount": "1000000000000000000",
+                "amount": "100000000000000000000",
                 "denom": "afet"
               }
             ],
