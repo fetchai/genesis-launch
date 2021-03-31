@@ -3,4 +3,5 @@
 !.gitignore
 !config/genesis.json
 !config/gentx/*.json
+!config/params/README.md
 !README.md
