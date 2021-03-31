@@ -129,7 +129,7 @@ Once pushed, you're ready to create your pull request. If needed, here's the [Gi
 We'll soon review and merge your pull request. Once we'll have collected all initial transactions from validators, we'll generate the final genesis and publish it on this repository. We'll notify you, so you can then update your fork by pulling the latest genesis file and start your validator providing it the seed identifier:
 
 ```bash
-git remote add upstream https://github.com/fetchai/genesis-prelaunch.git
+git remote add upstream https://github.com/fetchai/genesis-launch.git
 git fetch upstream
 git reset --hard upstream/main
 fetchd --home $(pwd) start --p2p.seeds "<seed_id>"
