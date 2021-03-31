@@ -2,7 +2,7 @@
 # We have launched!
 
 - ChainID: `fetchhub-1`
-- Seed: `9f9774d88bb6ff9f43b395baf0e7a4baba27dec6@http://connect-fetchhub.m-v2-london-c.fetch-ai.com:36856`
+- Seed: `9f9774d88bb6ff9f43b395baf0e7a4baba27dec6@connect-fetchhub.m-v2-london-c.fetch-ai.com:36856`
 - Block explorer: `https://explore-fetchhub.fetch.ai`
 - RPC: `https://rpc-fetchhub.fetch-ai.com`
 
