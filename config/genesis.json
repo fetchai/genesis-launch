@@ -182,6 +182,21 @@
             "public_key": "",
             "sequence": 0
           }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch1nvpy55tzjs325lg7rfrf6s0dpexzpyps4w0wt0",
+            "coins": [
+              {
+                "amount": "1000000000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
         }
       ],
       "params": {
