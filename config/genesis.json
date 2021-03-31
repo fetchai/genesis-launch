@@ -1,24 +1,35 @@
 {
-  "genesis_time": "2021-03-31T14:00:00Z",
-  "chain_id": "fetchhub-1",
-  "consensus_params": {
-    "block": {
-      "max_bytes": "150000",
-      "max_gas": "1500000",
-      "time_iota_ms": "1000"
-    },
-    "evidence": {
-      "max_age_num_blocks": "100000",
-      "max_age_duration": "172800000000000"
-    },
-    "validator": {
-      "pub_key_types": [
-        "ed25519"
-      ]
-    }
-  },
   "app_hash": "",
   "app_state": {
+    "auth": {
+      "accounts": [
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": 0,
+            "address": "fetch14kn0kk33szpwus9nh8n87fjel8djx0y0gxe24k",
+            "coins": [
+              {
+                "amount": "1000000000000000000",
+                "denom": "afet"
+              }
+            ],
+            "public_key": "",
+            "sequence": 0
+          }
+        }
+      ],
+      "params": {
+        "max_memo_characters": "256",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10"
+      }
+    },
+    "bank": {
+      "send_enabled": true
+    },
     "crisis": {
       "constant_fee": {
         "amount": "1000",
@@ -44,36 +55,14 @@
       "validator_historical_rewards": [],
       "validator_slash_events": []
     },
-    "genutil": {
-      "gentxs": []
-    },
-    "upgrade": {},
-    "mint": {
-      "minter": {
-        "annual_provisions": "0.000000000000000000",
-        "inflation": "0.030000000000000000"
-      },
+    "evidence": {
+      "evidence": [],
       "params": {
-        "blocks_per_year": "6311520",
-        "inflation_rate": "0.030000000000000000",
-        "mint_denom": "afet"
+        "max_evidence_age": "1814400000000000"
       }
     },
-    "staking": {
-      "delegations": null,
-      "exported": false,
-      "last_total_power": "0",
-      "last_validator_powers": null,
-      "params": {
-        "bond_denom": "afet",
-        "historical_entries": 0,
-        "max_entries": 7,
-        "max_validators": 50,
-        "unbonding_time": "1814400000000000"
-      },
-      "redelegations": null,
-      "unbonding_delegations": null,
-      "validators": null
+    "genutil": {
+      "gentxs": []
     },
     "gov": {
       "deposit_params": {
@@ -98,47 +87,18 @@
         "voting_period": "1209600000000000"
       }
     },
-    "evidence": {
-      "evidence": [],
+    "mint": {
+      "minter": {
+        "annual_provisions": "0.000000000000000000",
+        "inflation": "0.030000000000000000"
+      },
       "params": {
-        "max_evidence_age": "1814400000000000"
+        "blocks_per_year": "6311520",
+        "inflation_rate": "0.030000000000000000",
+        "mint_denom": "afet"
       }
     },
     "params": null,
-    "bank": {
-      "send_enabled": true
-    },
-    "wasm": {
-      "codes": null,
-      "contracts": null,
-      "sequences": null
-    },
-    "auth": {
-      "params": {
-        "max_memo_characters": "256",
-        "tx_sig_limit": "7",
-        "tx_size_cost_per_byte": "10",
-        "sig_verify_cost_ed25519": "590",
-        "sig_verify_cost_secp256k1": "1000"
-      },
-      "accounts": [
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "fetch14kn0kk33szpwus9nh8n87fjel8djx0y0gxe24k",
-            "coins": [
-              {
-                "denom": "afet",
-                "amount": "1000000000000000000"
-              }
-            ],
-            "public_key": "",
-            "account_number": 0,
-            "sequence": 0
-          }
-        }
-      ]
-    },
     "slashing": {
       "missed_blocks": {},
       "params": {
@@ -150,8 +110,48 @@
       },
       "signing_infos": {}
     },
+    "staking": {
+      "delegations": null,
+      "exported": false,
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "params": {
+        "bond_denom": "afet",
+        "historical_entries": 0,
+        "max_entries": 7,
+        "max_validators": 50,
+        "unbonding_time": "1814400000000000"
+      },
+      "redelegations": null,
+      "unbonding_delegations": null,
+      "validators": null
+    },
     "supply": {
       "supply": []
+    },
+    "upgrade": {},
+    "wasm": {
+      "codes": null,
+      "contracts": null,
+      "sequences": null
     }
-  }
+  },
+  "chain_id": "fetchhub-1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "150000",
+      "max_gas": "1500000",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_duration": "172800000000000",
+      "max_age_num_blocks": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "genesis_time": "2021-03-31T14:00:00Z"
 }
